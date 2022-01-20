@@ -3,8 +3,6 @@ import { Route, Switch } from "react-router-dom";
 import Home from "./containers/Home";
 import NotFound from "./containers/NotFound";
 
-// Random comments
-
 export default function Routes() {
     return (
         <Switch>
