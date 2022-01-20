@@ -1,8 +1,4 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import { LinkContainer } from "react-router-bootstrap";
-import AppHeader from "./components/AppHeader";
 import CollapseBar from "./components/CollapseBar";
 import Routes from "./Routes";
 import "./App.css";
