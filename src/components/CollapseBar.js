@@ -46,7 +46,7 @@ const ResponsiveAppBar = () => {
                     </Box>
 
                     <Box sx={{ flexGrow: 0 }}>
-                        <IconButton href="https://github.com/opensourcesocialgames">
+                        <IconButton href="https://github.com/partyfishgames">
                             <GitHubIcon />
                         </IconButton>
                         <IconButton href="https://discord.gg/atwZbthwMd">
