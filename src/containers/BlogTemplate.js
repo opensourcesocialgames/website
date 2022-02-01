@@ -28,6 +28,22 @@ const featuredPosts = [
         image: 'https://images.unsplash.com/photo-1629203805267-de9c6225e6de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
         imageLabel: 'Image Text',
     },
+    {
+        title: 'Release 1.0.1',
+        date: 'Jan 1',
+        description:
+            'This is the first release of this project signifying the beginning of the end for quiplash',
+        image: 'https://images.unsplash.com/photo-1629203805267-de9c6225e6de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageLabel: 'Image Text',
+    },
+    {
+        title: 'Release 1.0.1',
+        date: 'Jan 1',
+        description:
+            'This is the first release of this project signifying the beginning of the end for quiplash',
+        image: 'https://images.unsplash.com/photo-1629203805267-de9c6225e6de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+        imageLabel: 'Image Text',
+    },
 ];
 
 export default function Blog() {

@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
+import { LinkContainer } from "react-router-bootstrap";
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 import FishIcon from "../images/fish.png";
@@ -28,15 +29,17 @@ const ResponsiveAppBar = () => {
                     {/* Logo from https://www.flaticon.com/free-icon/fish_1864557 */}
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                        <LinkContainer to="/installation">
+                            <Button
+                                sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block' }}
+                            >
+                                Installation
+                            </Button>
+                        </LinkContainer>
                         <Button
                             sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block' }}
                         >
-                            Installation
-                        </Button>
-                        <Button
-                            sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block' }}
-                        >
-                            Bug Reports
+                            Screenshots
                         </Button>
                         <Button
                             sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block' }}
