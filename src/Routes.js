@@ -3,6 +3,9 @@ import { Route, Switch } from "react-router-dom";
 import Home from "./containers/Home";
 import NotFound from "./containers/NotFound";
 import Installation from "./containers/Installation";
+import Contribution from "./containers/Contribution";
+import AboutUs from "./containers/AboutUs";
+import Screenshots from "./containers/Screenshots";
 
 export default function Routes() {
     return (
@@ -13,6 +16,18 @@ export default function Routes() {
 
             <Route exact path="/installation">
                 <Installation />
+            </Route>
+
+            <Route exact path="/contribution">
+                <Contribution />
+            </Route>
+
+            <Route exact path="/about_us">
+                <AboutUs />
+            </Route>
+
+            <Route exact path="/screenshots">
+                <Screenshots />
             </Route>
 
             {/* Finally, catch all unmatched routes */}

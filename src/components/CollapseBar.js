@@ -17,18 +17,24 @@ const ResponsiveAppBar = () => {
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <img src={FishIcon} alt="fishicon" style={{ width: "50px", height: "50px"}}></img>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="div"
-                        sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-                    >
-                        PartyFish
-                    </Typography>
+                    <LinkContainer to="/">
+                            <Button
+                                sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block', fontSize: 20 }}
+                            >
+                                PartyFishGames
+                            </Button>
+                    </LinkContainer>
 
                     {/* Logo from https://www.flaticon.com/free-icon/fish_1864557 */}
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                        <LinkContainer to="/about_us">
+                            <Button
+                                sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block' }}
+                            >
+                                About Us
+                        </Button>
+                        </LinkContainer>
                         <LinkContainer to="/installation">
                             <Button
                                 sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block' }}
@@ -36,16 +42,20 @@ const ResponsiveAppBar = () => {
                                 Installation
                             </Button>
                         </LinkContainer>
+                        <LinkContainer to="/contribution">
+                        <Button
+                            sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block' }}
+                        >
+                            Contribution
+                        </Button>
+                        </LinkContainer>
+                        <LinkContainer to="/screenshots">
                         <Button
                             sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block' }}
                         >
                             Screenshots
                         </Button>
-                        <Button
-                            sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block' }}
-                        >
-                            Contribute
-                        </Button>
+                        </LinkContainer>
                     </Box>
 
                     <Box sx={{ flexGrow: 0 }}>
