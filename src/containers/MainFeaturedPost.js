@@ -5,11 +5,21 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
+import { createTheme } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 
 import FishIcon from "../images/fish.png";
 
 function MainFeaturedPost(props) {
-    const { post } = props;
+    const { post } = props;    
+    const cartoonTheme = createTheme({
+        typography: {
+            fontFamily: [
+                'Chicle',
+                'cursive',
+            ].join(','),
+        },
+    });
 
     return (
         <Paper
@@ -48,9 +58,11 @@ function MainFeaturedPost(props) {
                         }}
                     >
                         <img src={FishIcon} style={{width: "100px", height: "100px"}} alt="fish logo"></img>
-                        <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-                            {post.title}
-                        </Typography>
+                        <ThemeProvider theme={cartoonTheme}>
+                            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+                                {post.title}
+                            </Typography>
+                        </ThemeProvider>
                         <Typography variant="h5" color="inherit" paragraph>
                             {post.description}
                         </Typography>

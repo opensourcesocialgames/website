@@ -12,7 +12,7 @@ import FishIcon from "../images/fish.png";
 
 const ResponsiveAppBar = () => {
     return (
-        <AppBar style={{background: "#023E8A", color:"#222f3e"}} position="static"> {/* #1dd1a1 */}
+        <AppBar style={{background: "#023E8A", color:"#222f3e"}} position="static"> 
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <img src={FishIcon} alt="fishicon" style={{ width: "50px", height: "50px"}}></img>
@@ -20,7 +20,7 @@ const ResponsiveAppBar = () => {
                             <Button
                                 sx={{ my: 2, color: "white", textTransform: 'none', display: 'block', fontSize: 20 }}
                             >
-                                PartyFishGames
+                                PartyFish
                             </Button>
                     </LinkContainer>
 
