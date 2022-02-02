@@ -2,46 +2,33 @@ import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import MainFeaturedPost from './MainFeaturedPost';
 import FeaturedPost from './FeaturedPost';
+import BubblesBackground from "../images/bubbles.png";
+import GameConsoles from '../images/gameconsoles.png';
+import GameGraphic from '../images/gamegraphic.png';
 
 const mainFeaturedPost = {
     title: 'PartyFish',
-    description: 'A free and open source party game for up to 10 players',
-    image: 'https://images.unsplash.com/photo-1464925257126-6450e871c667?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+    description: 'A free and open source gaming platform with interactive games for all!',
+    image: BubblesBackground,
     imageText: 'main image description',
     linkText: 'Continue reading…',
 };
 
 const featuredPosts = [
     {
-        title: 'Recent Update 1.2',
-        date: 'Jan 15',
+        title: 'Game Platform Release',
+        date: 'Date TBD',
         description:
-            'This update included new party modes such as degenerate mode and normie mode',
-        image: 'https://images.unsplash.com/photo-1626686707291-7bda5c45e8a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80',
+            'This is the first release of the gaming platform, PartyFish. Let this mark the beginning of the end for quiplash.',
+        image: GameConsoles,
         imageLabel: 'Image Text',
     },
     {
-        title: 'Release 1.0.1',
-        date: 'Jan 1',
+        title: 'Trivalry Game Release',
+        date: 'Date TBD',
         description:
-            'This is the first release of this project signifying the beginning of the end for quiplash',
-        image: 'https://images.unsplash.com/photo-1629203805267-de9c6225e6de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-        imageLabel: 'Image Text',
-    },
-    {
-        title: 'Release 1.0.1',
-        date: 'Jan 1',
-        description:
-            'This is the first release of this project signifying the beginning of the end for quiplash',
-        image: 'https://images.unsplash.com/photo-1629203805267-de9c6225e6de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-        imageLabel: 'Image Text',
-    },
-    {
-        title: 'Release 1.0.1',
-        date: 'Jan 1',
-        description:
-            'This is the first release of this project signifying the beginning of the end for quiplash',
-        image: 'https://images.unsplash.com/photo-1629203805267-de9c6225e6de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+            'This is the launch of PartyFish\'s first game, Trivalry, a fun and exciting mix of trivia and survivor.',
+        image: GameGraphic,
         imageLabel: 'Image Text',
     },
 ];
