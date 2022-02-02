@@ -16,7 +16,7 @@ function MainFeaturedPost(props) {
             sx={{
                 position: 'relative',
                 backgroundColor: 'grey.800',
-                color: "white",
+                color: "#0466c8",
                 mb: 4,
                 pb: 20,
                 pt: 10,
@@ -55,7 +55,7 @@ function MainFeaturedPost(props) {
                             {post.description}
                         </Typography>
                         <Button variant="contained">
-                            Try it now!
+                            Play the games now!
                         </Button>
                     </Box>
                 </Grid>

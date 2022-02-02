@@ -12,13 +12,13 @@ import FishIcon from "../images/fish.png";
 
 const ResponsiveAppBar = () => {
     return (
-        <AppBar style={{background: "#1dd1a1", color:"#222f3e"}} position="static">
+        <AppBar style={{background: "#023E8A", color:"#222f3e"}} position="static"> {/* #1dd1a1 */}
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <img src={FishIcon} alt="fishicon" style={{ width: "50px", height: "50px"}}></img>
                     <LinkContainer to="/">
                             <Button
-                                sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block', fontSize: 20 }}
+                                sx={{ my: 2, color: "white", textTransform: 'none', display: 'block', fontSize: 20 }}
                             >
                                 PartyFishGames
                             </Button>
@@ -29,28 +29,28 @@ const ResponsiveAppBar = () => {
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         <LinkContainer to="/about_us">
                             <Button
-                                sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block' }}
+                                sx={{ my: 2, color: "white", textTransform: 'none', display: 'block' }}
                             >
                                 About Us
                         </Button>
                         </LinkContainer>
                         <LinkContainer to="/installation">
                             <Button
-                                sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block' }}
+                                sx={{ my: 2, color: "white", textTransform: 'none', display: 'block' }}
                             >
                                 Installation
                             </Button>
                         </LinkContainer>
                         <LinkContainer to="/contribution">
                         <Button
-                            sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block' }}
+                            sx={{ my: 2, color: "white", textTransform: 'none', display: 'block' }}
                         >
                             Contribution
                         </Button>
                         </LinkContainer>
                         <LinkContainer to="/screenshots">
                         <Button
-                            sx={{ my: 2, color: "#222f3e", textTransform: 'none', display: 'block' }}
+                            sx={{ my: 2, color: "white", textTransform: 'none', display: 'block' }}
                         >
                             Screenshots
                         </Button>
@@ -58,10 +58,10 @@ const ResponsiveAppBar = () => {
                     </Box>
 
                     <Box sx={{ flexGrow: 0 }}>
-                        <IconButton href="https://github.com/partyfishgames">
+                        <IconButton href="https://github.com/partyfishgames" color="primary">
                             <GitHubIcon />
                         </IconButton>
-                        <IconButton href="https://discord.gg/atwZbthwMd">
+                        <IconButton href="https://discord.gg/atwZbthwMd" color="primary">
                             <i class="fab fa-discord"></i>
                         </IconButton>
                     </Box>
