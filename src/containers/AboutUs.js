@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <div className="AboutUs">
       <h1>
-          About Us page!
+          About page!
       </h1>
     </div>
   );

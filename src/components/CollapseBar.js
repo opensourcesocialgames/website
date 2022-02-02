@@ -31,7 +31,7 @@ const ResponsiveAppBar = () => {
                             <Button
                                 sx={{ my: 2, color: "white", textTransform: 'none', display: 'block' }}
                             >
-                                About Us
+                                About
                         </Button>
                         </LinkContainer>
                         <LinkContainer to="/installation">
