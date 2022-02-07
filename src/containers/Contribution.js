@@ -43,31 +43,31 @@ export default function Contribution() {
         elevation={3}
       >
         <List margin-left={10} padding={10}>
-          <ListItem>
+          <ListItem button component="a" target="_blank">
             <ListItemIcon>
               <SportsEsportsIcon fontSize="medium" />
             </ListItemIcon>
             <ListItemText primary="Play Partyfish Games!" />
           </ListItem>
-          <ListItem>
+          <ListItem button component="a" target="_blank" href="https://discord.com/invite/2WHbAQp8dp">
             <ListItemIcon>
               <ForumIcon fontSize="medium" />
             </ListItemIcon>
             <ListItemText primary="Communicate Ideas, Thoughts, and Opinions in the Discord Servers" />
           </ListItem>
-          <ListItem>
+          <ListItem button component="a" target="_blank" href="https://github.com/partyfishgames/partyfish/issues">
             <ListItemIcon>
               <BugReportIcon fontSize="medium" />
             </ListItemIcon>
-            <ListItemText primary="Post Bugs to Github Issues and Discord Bug-Tracking Server" />
+            <ListItemText primary="Report Bugs to the Github Issues Page" />
           </ListItem>
-          <ListItem>
+          <ListItem button component="a" target="_blank" href="https://github.com/orgs/partyfishgames/repositories">
             <ListItemIcon>
               <CodeIcon fontSize="medium" />
             </ListItemIcon>
             <ListItemText primary="Contribute Code to the Github Repositories" />
           </ListItem>
-          <ListItem>
+          <ListItem button component="a" target="_blank" href="https://github.com/partyfishgames/partyfish/pulls">
             <ListItemIcon>
               <MergeIcon fontSize="medium" />
             </ListItemIcon>
