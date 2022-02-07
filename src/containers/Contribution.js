@@ -45,31 +45,31 @@ export default function Contribution() {
         <List margin-left={10} padding={10}>
           <ListItem>
             <ListItemIcon>
-              <SportsEsportsIcon fontSize="large" />
+              <SportsEsportsIcon fontSize="medium" />
             </ListItemIcon>
             <ListItemText primary="Play Partyfish Games!" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <ForumIcon fontSize="large" />
+              <ForumIcon fontSize="medium" />
             </ListItemIcon>
             <ListItemText primary="Communicate Ideas, Thoughts, and Opinions in the Discord Servers" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <BugReportIcon fontSize="large" />
+              <BugReportIcon fontSize="medium" />
             </ListItemIcon>
             <ListItemText primary="Post Bugs to Github Issues and Discord Bug-Tracking Server" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CodeIcon fontSize="large" />
+              <CodeIcon fontSize="medium" />
             </ListItemIcon>
             <ListItemText primary="Contribute Code to the Github Repositories" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <MergeIcon fontSize="large" />
+              <MergeIcon fontSize="medium" />
             </ListItemIcon>
             <ListItemText primary="Comment Reviews on Github Pull Requests" />
           </ListItem>
