@@ -30,7 +30,7 @@ const ResponsiveAppBar = () => {
     };
 
     return (
-        <AppBar position="static">
+        <AppBar style={{background: "#023E8A", color:"#222f3e"}} position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     <img src={FishIcon} alt="fishicon" style={{ width: "50px", height: "50px" }}></img>
@@ -66,9 +66,8 @@ const ResponsiveAppBar = () => {
                                 aria-label="account of current user"
                                 aria-controls="menu-appbar"
                                 aria-haspopup="true"
-                                color="inherit"
                             >
-                                <i class="fab fa-github"></i>
+                                <i style={{color: "white"}} class="fab fa-github"></i>
                             </IconButton>
                         </Link>
                         <Link 
@@ -86,7 +85,7 @@ const ResponsiveAppBar = () => {
                                 aria-haspopup="true"
                                 color="inherit"
                             >
-                                <i class="fab fa-discord"></i>
+                                <i style={{color: "white"}} class="fab fa-discord"></i>
                             </IconButton>
                         </Link>
                     </Box>
