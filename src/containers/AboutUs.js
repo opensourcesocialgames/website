@@ -4,6 +4,7 @@ import { Grid, Paper } from "@mui/material";
 import NDCS from "../images/ndcs.png";
 import Avatar from "@mui/material/Avatar";
 import Link from "@mui/material/Link";
+import { LinkContainer } from 'react-router-bootstrap';
 
 import "./AboutUs.css";
 
@@ -146,9 +147,11 @@ export default function AboutUs() {
       </h5>
       <p>
         There are no outside contributors yet! Check out the{" "}
-        <a href="/contribution">
+        <LinkContainer to="/contribution">
+          <Link>
           <b>Contribute</b>
-        </a>{" "}
+          </Link>
+        </LinkContainer>{" "}
         page of this site for info on how to help with the project.
       </p>
     </div>
