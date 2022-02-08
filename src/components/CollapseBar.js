@@ -3,67 +3,141 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
+import Typography from '@mui/material/Typography';
+import Menu from '@mui/material/Menu';
+import Link from '@mui/material/Link';
+import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import { LinkContainer } from "react-router-bootstrap";
-import GitHubIcon from '@mui/icons-material/GitHub';
+import MenuItem from '@mui/material/MenuItem';
+import { LinkContainer } from 'react-router-bootstrap';
+
+import "./CollapseBar.css";
 
 import FishIcon from "../images/fish.png";
 
+const pages = ['About', 'Installation', 'Contribution', 'Screenshots'];
+
 const ResponsiveAppBar = () => {
+    const [anchorElNav, setAnchorElNav] = React.useState(null);
+
+    const handleOpenNavMenu = (event) => {
+        setAnchorElNav(event.currentTarget);
+    };
+
+    const handleCloseNavMenu = () => {
+        setAnchorElNav(null);
+    };
+
     return (
-        <AppBar style={{background: "#023E8A", color:"#222f3e"}} position="static"> 
+        <AppBar position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <img src={FishIcon} alt="fishicon" style={{ width: "50px", height: "50px"}}></img>
+                    <img src={FishIcon} alt="fishicon" style={{ width: "50px", height: "50px" }}></img>
                     <LinkContainer to="/">
-                            <Button
-                                sx={{ my: 2, color: "white", textTransform: 'none', display: 'block', fontSize: 20 }}
-                            >
-                                PartyFish
-                            </Button>
+                        <Button
+                            sx={{ my: 2, color: "white", textTransform: 'none', display: 'block', fontSize: 20 }}
+                        >
+                            PartyFish
+                        </Button>
                     </LinkContainer>
-
-                    {/* Logo from https://www.flaticon.com/free-icon/fish_1864557 */}
-
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        <LinkContainer to="/about_us">
-                            <Button
-                                sx={{ my: 2, color: "white", textTransform: 'none', display: 'block' }}
-                            >
-                                About
-                        </Button>
-                        </LinkContainer>
-                        <LinkContainer to="/installation">
-                            <Button
-                                sx={{ my: 2, color: "white", textTransform: 'none', display: 'block' }}
-                            >
-                                Installation
-                            </Button>
-                        </LinkContainer>
-                        <LinkContainer to="/contribution">
-                        <Button
-                            sx={{ my: 2, color: "white", textTransform: 'none', display: 'block' }}
-                        >
-                            Contribution
-                        </Button>
-                        </LinkContainer>
-                        <LinkContainer to="/screenshots">
-                        <Button
-                            sx={{ my: 2, color: "white", textTransform: 'none', display: 'block' }}
-                        >
-                            Screenshots
-                        </Button>
-                        </LinkContainer>
+                        {pages.map((page) => (
+                            <LinkContainer to={'/' + page.toLowerCase()}>
+                                <Button
+                                    sx={{ my: 2, color: "white", textTransform: 'none', display: 'block' }}
+                                >
+                                    {page}
+                                </Button>
+                            </LinkContainer>
+                        ))}
                     </Box>
-
-                    <Box sx={{ flexGrow: 0 }}>
-                        <IconButton href="https://github.com/partyfishgames" color="primary">
-                            <GitHubIcon />
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                        <Link 
+                            href="https://github.com/partyfishgames" 
+                            underline="none"
+                            color="inherit"
+                            target="_blank"
+                            rel="noreferrer"
+                            style={{ display: "block", marginLeft: "auto", marginRight: 0 }}
+                        >
+                            <IconButton
+                                size="large"
+                                aria-label="account of current user"
+                                aria-controls="menu-appbar"
+                                aria-haspopup="true"
+                                color="inherit"
+                            >
+                                <i class="fab fa-github"></i>
+                            </IconButton>
+                        </Link>
+                        <Link 
+                            href="https://discord.com/invite/2WHbAQp8dp" 
+                            underline="none"
+                            target="_blank"
+                            rel="noreferrer"
+                            color="inherit"
+                            style={{ display: "block", marginRight: 0 }}
+                        >
+                            <IconButton
+                                size="large"
+                                aria-label="account of current user"
+                                aria-controls="menu-appbar"
+                                aria-haspopup="true"
+                                color="inherit"
+                            >
+                                <i class="fab fa-discord"></i>
+                            </IconButton>
+                        </Link>
+                    </Box>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                        <IconButton
+                            size="large"
+                            aria-label="account of current user"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            onClick={handleOpenNavMenu}
+                            color="inherit"
+                            style={{ display: "block", marginLeft: "auto", marginRight: 0 }}
+                        >
+                            <MenuIcon />
                         </IconButton>
-                        <IconButton href="https://discord.gg/atwZbthwMd" color="primary">
-                            <i class="fab fa-discord"></i>
-                        </IconButton>
+                        <Menu
+                            id="menu-appbar"
+                            anchorEl={anchorElNav}
+                            anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'left',
+                            }}
+                            keepMounted
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'left',
+                            }}
+                            open={Boolean(anchorElNav)}
+                            onClose={handleCloseNavMenu}
+                            sx={{
+                                display: { xs: 'block', md: 'none' },
+                            }}
+                        >
+                            {pages.map((page) => (
+                                <LinkContainer to={'/' + page.toLowerCase()}>
+                                    <MenuItem key={page} onClick={handleCloseNavMenu}>
+                                        <Typography textAlign="center">{page}</Typography>
+                                    </MenuItem>
+                                </LinkContainer>
+                            ))}
+                            <MenuItem key="discord">
+                                <a target="_blank" rel="noreferrer" href="https://discord.com/invite/2WHbAQp8dp">
+                                    <Typography textAlign="center">Discord</Typography>
+                                </a>
+                            </MenuItem>
+                            <MenuItem key="github">
+                                <a target="_blank" rel="noreferrer" href="https://github.com/partyfishgames">
+                                    <Typography textAlign="center">Github</Typography>
+                                </a>
+                            </MenuItem>
+                        </Menu>
                     </Box>
                 </Toolbar>
             </Container>
