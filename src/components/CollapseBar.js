@@ -99,7 +99,7 @@ const ResponsiveAppBar = () => {
                             color="inherit"
                             style={{ display: "block", marginLeft: "auto", marginRight: 0 }}
                         >
-                            <MenuIcon />
+                            <MenuIcon style={{color: "white"}} />
                         </IconButton>
                         <Menu
                             id="menu-appbar"

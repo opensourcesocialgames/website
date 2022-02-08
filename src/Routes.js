@@ -22,7 +22,7 @@ export default function Routes() {
                 <Contribution />
             </Route>
 
-            <Route exact path="/about_us">
+            <Route exact path="/about">
                 <AboutUs />
             </Route>
 
