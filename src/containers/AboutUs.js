@@ -4,7 +4,6 @@ import { Grid, Paper } from "@mui/material";
 import NDCS from "../images/ndcs.png";
 import Avatar from "@mui/material/Avatar";
 import Link from "@mui/material/Link";
-import { LinkContainer } from 'react-router-bootstrap';
 
 import "./AboutUs.css";
 
@@ -145,15 +144,23 @@ export default function AboutUs() {
       >
         Contributors
       </h5>
-      <p>
-        There are no outside contributors yet! Check out the{" "}
-        <LinkContainer to="/contribution">
-          <Link>
-          <b>Contribute</b>
+      <Grid
+        container
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Grid item xs={2}>
+          <Avatar alt="Chase Saca" src="https://github.com/furkanmutlu.png" />
+          <Link
+            target="_blank"
+            href="https://github.com/furkanmutlu"
+            underline="none"
+          >
+            furkanmutlu
           </Link>
-        </LinkContainer>{" "}
-        page of this site for info on how to help with the project.
-      </p>
+        </Grid>
+      </Grid>
     </div>
   );
 }
