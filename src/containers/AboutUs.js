@@ -151,7 +151,7 @@ export default function AboutUs() {
         alignItems="center"
       >
         <Grid item xs={2}>
-          <Avatar alt="Chase Saca" src="https://github.com/furkanmutlu.png" />
+          <Avatar alt="furkanmutlu" src="https://github.com/furkanmutlu.png" />
           <Link
             target="_blank"
             href="https://github.com/furkanmutlu"
