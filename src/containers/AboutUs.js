@@ -7,6 +7,14 @@ import Link from "@mui/material/Link";
 
 import "./AboutUs.css";
 
+const contributors = [
+  {
+    name: "furkanmutlu",
+    picture: "https://github.com/furkanmutlu.png",
+    github: "https://github.com/furkanmutlu",
+  },
+];
+
 export default function AboutUs() {
   return (
     <div className="AboutUs">
@@ -42,7 +50,7 @@ export default function AboutUs() {
           spacing={1}
         >
           <Grid item xs={6}>
-            <img src={NDCS} alt="NDCS logo" height='80%' width='80%'></img>
+            <img src={NDCS} alt="NDCS logo" height="80%" width="80%"></img>
           </Grid>
           <Grid item xs={6} paddingRight={5}>
             <p>
@@ -151,14 +159,14 @@ export default function AboutUs() {
         alignItems="center"
       >
         <Grid item xs={2}>
-          <Avatar alt="furkanmutlu" src="https://github.com/furkanmutlu.png" />
-          <Link
-            target="_blank"
-            href="https://github.com/furkanmutlu"
-            underline="none"
-          >
-            furkanmutlu
-          </Link>
+          {contributors.map((contributor) => (
+            <div>
+              <Avatar alt={contributor.name} src={contributor.picture} />
+              <Link target="_blank" href={contributor.github} underline="none">
+                {contributor.name}
+              </Link>
+            </div>
+          ))}
         </Grid>
       </Grid>
     </div>
