@@ -16,7 +16,7 @@ import "./CollapseBar.css";
 
 import FishIcon from "../images/fish.png";
 
-const pages = ['About', 'Installation', 'Contribution', 'Screenshots'];
+const pages = ['About', 'Installation', 'Contribution', 'Screenshots', 'Documentation'];
 
 const ResponsiveAppBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);

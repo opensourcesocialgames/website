@@ -6,6 +6,7 @@ import Installation from "./containers/Installation";
 import Contribution from "./containers/Contribution";
 import AboutUs from "./containers/AboutUs";
 import Screenshots from "./containers/Screenshots";
+import Documentation from "./containers/Documentation";
 
 export default function Routes() {
     return (
@@ -28,6 +29,10 @@ export default function Routes() {
 
             <Route exact path="/screenshots">
                 <Screenshots />
+            </Route>
+
+            <Route exact path="/documentation">
+                <Documentation />
             </Route>
 
             {/* Finally, catch all unmatched routes */}
