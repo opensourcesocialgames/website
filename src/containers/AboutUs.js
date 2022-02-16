@@ -4,9 +4,16 @@ import { Grid, Paper } from "@mui/material";
 import NDCS from "../images/ndcs.png";
 import Avatar from "@mui/material/Avatar";
 import Link from "@mui/material/Link";
-import { LinkContainer } from 'react-router-bootstrap';
 
 import "./AboutUs.css";
+
+const contributors = [
+  {
+    name: "furkanmutlu",
+    picture: "https://github.com/furkanmutlu.png",
+    github: "https://github.com/furkanmutlu",
+  },
+];
 
 export default function AboutUs() {
   return (
@@ -43,7 +50,7 @@ export default function AboutUs() {
           spacing={1}
         >
           <Grid item xs={6}>
-            <img src={NDCS} alt="NDCS logo" height='80%' width='80%'></img>
+            <img src={NDCS} alt="NDCS logo" height="80%" width="80%"></img>
           </Grid>
           <Grid item xs={6} paddingRight={5}>
             <p>
@@ -145,15 +152,23 @@ export default function AboutUs() {
       >
         Contributors
       </h5>
-      <p>
-        There are no outside contributors yet! Check out the{" "}
-        <LinkContainer to="/contribution">
-          <Link>
-          <b>Contribute</b>
-          </Link>
-        </LinkContainer>{" "}
-        page of this site for info on how to help with the project.
-      </p>
+      <Grid
+        container
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Grid item xs={2}>
+          {contributors.map((contributor) => (
+            <div>
+              <Avatar alt={contributor.name} src={contributor.picture} />
+              <Link target="_blank" href={contributor.github} underline="none">
+                {contributor.name}
+              </Link>
+            </div>
+          ))}
+        </Grid>
+      </Grid>
     </div>
   );
 }
