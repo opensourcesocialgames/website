@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import StarBorderIcon from '@mui/icons-material/StarBorder';
 import Working from "../images/screenshots/working.png"
 import Working1 from "../images/screenshots/working1.png"
-import FileLayout from "../images/screenshots/filelayout.png"
+//import FileLayout from "../images/screenshots/filelayout.png"
 import Redux from "../images/screenshots/redux.png"
 import Demo from "../images/screenshots/demo.png"
 import HawaiianBlob from "../images/screenshots/happyblob.png";
