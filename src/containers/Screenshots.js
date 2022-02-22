@@ -3,14 +3,15 @@ import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import IconButton from '@mui/material/IconButton';
-import StarBorderIcon from '@mui/icons-material/StarBorder';
+import ListItemIcon from "@mui/material/ListItemIcon";
+//import StarBorderIcon from '@mui/icons-material/StarBorder';
 import Working from "../images/screenshots/working.png"
 import Working1 from "../images/screenshots/working1.png"
 //import FileLayout from "../images/screenshots/filelayout.png"
 import Redux from "../images/screenshots/redux.png"
 import Demo from "../images/screenshots/demo.png"
 import HawaiianBlob from "../images/screenshots/happyblob.png";
+import SetMealIcon from '@mui/icons-material/SetMeal';
 
 export default function Screenshots() {
   return (
@@ -40,19 +41,19 @@ export default function Screenshots() {
                 <ImageListItemBar
                   sx={{
                     background:
-                      'linear-gradient(to top, rgba(0,0,0,0.7) 30%, ' +
-                      'rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
+                      'linear-gradient(to top, rgba(0,0,0,0.7) 50%, ' +
+                      'rgba(0,0,0,0.3) 75%, rgba(0,0,0,0) 100%)',
                   }}
                   title={item.title}
                   position="bottom"
                   actionIcon={
-                    <IconButton
-                      sx={{ color: 'white' }}
+                    <ListItemIcon
+                      sx={{color: 'yellow'}}
                       aria-label={`star ${item.title}`}
                     >
-                      <StarBorderIcon />
-                    </IconButton>
-                  }
+                      <SetMealIcon />
+                    </ListItemIcon>
+                 }
                   actionPosition="left"
                 />
               </ImageListItem>
