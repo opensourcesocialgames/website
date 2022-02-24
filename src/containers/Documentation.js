@@ -58,7 +58,7 @@ export default function Documentation() {
       <div className="Documentation">
         <br></br>
         <Box
-          sx={{flexGrow: 1, bgcolor: 'background.paper', display: 'flex'}}
+          sx={{flexGrow: 1, bgcolor: 'background.paper', display: 'flex',}}
         >
           <Tabs
             orientation="vertical"
@@ -67,7 +67,7 @@ export default function Documentation() {
             onChange={handleChange}
             aria-label="Vertical tabs"
             //centered={true}
-            sx={{minWidth: '26%', borderRight: 1, borderColor: 'divider', borderWidth: 2,  px: 4,}}
+            sx={{minWidth: '20%', borderRight: 1, borderColor: 'divider', borderWidth: 2,}}
           >
             {tabs.map((tab) => (
             <Tab 
@@ -78,7 +78,7 @@ export default function Documentation() {
             ))}
             </Tabs>
             {tabs.map((tab) => (
-              <Paper elevation={3} sx={{maxWidth:'85%'}}>
+              <Paper elevation={3} sx={{maxWidth:'80%'}}>
                 <TabPanel value={value} index={tab.num}>
                     <Paper elevation={3}>
                       <h5 style={{color: "#023E8A", marginTop: 3, marginBottom: 3, }}>
@@ -105,7 +105,7 @@ export default function Documentation() {
 
   const tabs = [
     {
-      name: 'OverView',
+      name: 'Overview',
       header:  "Come and learn about the behind the scenes of PartyFish!",
       body:
         <Box>
@@ -154,7 +154,7 @@ export default function Documentation() {
     },
     {
       name: 'Programming Languages',
-      header:"Different Languages are called for across the different developmental areas!",
+      header:"Different languages are called for across the different developmental areas!",
       body:
         <Box>
           <body>
@@ -168,7 +168,7 @@ export default function Documentation() {
           </body>
           <p>
             In true webdeveloping fashion the team used aspects of CSS 
-            and HTML to style the front ends of our project 
+            and HTML to style the front-ends of our project 
             (including this website)! CSS and HTML have
             allowed us to stlye and layout our products as we see fit.  
           </p>
@@ -190,7 +190,7 @@ export default function Documentation() {
             </Link>
           </body>
           <p>
-            Typescript is the majority language used in the development of Partyfish!
+            Typescript is the majority language used in the development of PartyFish!
             It intergrates flawlessly with the rest of the stack that we have choosen.
             It is a strongly typed language that builds on JavaScript which makes it better at scaling. 
             In addition Typescript has allowed us to catch errors early on in the development
@@ -201,7 +201,7 @@ export default function Documentation() {
     },
     {
       name: 'Front-End',
-      header: "Resources used in the Development of our FrontEnds!",
+      header: "Resources used in the development of our Front-Ends!",
       body:
         <Box>
           <body>
@@ -210,8 +210,8 @@ export default function Documentation() {
             </Link>
           </body>
           <p>
-            Material UI has been an incredible source, that has helped us to make this website athetically pleasing (hopefully) 
-            as well as easy to use. Material UI has aided us in styling most if not all aspects of our front ends. The resource
+            Material UI has been an incredible resource that has helped us to make this website athetically pleasing (hopefully) 
+            as well as easy to use. Material UI has aided us in styling most if not all aspects of our front-ends. The resource
             provided myriad templates for all components. The App Bar, Box, Paper, Tabs, and Tab Panel on this page were
             styled with Material UI! Our super fun and awesome game was also styled with components from Material UI.  
           </p> 
@@ -231,7 +231,7 @@ export default function Documentation() {
     },
     {
       name: 'Networking',
-      header: "Resources used in to aid in Networking across the project!",
+      header: "Resources used to aid in Networking across the project!",
       body:
         <Box>
           <body>
@@ -253,7 +253,7 @@ export default function Documentation() {
             </Link>
           </body>
           <p align="center">
-          Redux is a state container for JS apps that allows us to maintain our mainy
+          Redux is a state container for JS apps that allows us to maintain our many
           and constantly changing states which affect both the server and client. It
           has made it possible to write logically and centralized code. In addition it
           aids in debugging and will make testing and finding issues simpler.
@@ -272,8 +272,8 @@ export default function Documentation() {
       num: 3,
     },
     {
-      name: 'BackEnd',
-      header: "Checkout out the technologies used to develop our Backend!",
+      name: 'Back-End',
+      header: "Checkout out the technologies used to develop our Back-End!",
       body:
         <Box>
           <body>
