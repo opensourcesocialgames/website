@@ -9,6 +9,7 @@ import Link from "@mui/material/Link";
 //import CssIcon from '@mui/icons-material/Css';
 //import HtmlIcon from '@mui/icons-material/Html';
 //import JavascriptIcon from '@mui/icons-material/Javascript';
+//import LightbulbIcon from '@mui/icons-material/Lightbulb';
 
 
 function TabPanel(props) {
@@ -106,18 +107,55 @@ export default function Documentation() {
             marginTop: 5,
             marginBottom: 5,
           }}>
-            Welcome to our Documentation Page!
+            Come and learn about the behind the scenes of PartyFish!
           </p>
-          </Paper>
-          <Paper elevation={3} sx={{py:1, px:1, my:1, mx:1}}  >
+
           <p>
             Using the tabs to your left you can explore the current tech stack  
             we are using to create our incredibly fun 
             new social game platform!
           </p>
-          <br></br>
+          </Paper>
+          <Paper elevation={3} sx={{py:1, px:1, my:1, mx:1}}  >
+          <body>
+            <Link target="_blank" href="#https://partyfish.netlify.app/">
+            Who are we?
+            </Link>
+          </body>
           <p>
-            If you would like to make any contributions feel free to head over to our contribution section!  
+             As can be read about on our About Us Page, we are a group of five
+             Notre Dame students who have choosen to create a social game for 
+             our Open Source class semester long project!  
+          </p>
+          <body>
+            <Link target="_blank" href="https://opensource.com/">
+            Open Source
+            </Link>
+          </body>
+          <p>
+             The Open Source mindset is one in which the developers believe
+             that communal coding is better than programming done for monetization.
+             The software produced by Open Source projects is avaliable at no cost
+             to anyone who has interest. 
+
+             Anyone is able to take the source code of an Open Source project modify,
+             enhance, or completely its purpose! Subscribers to the Open Source mentality
+             believe that is allows for more creative and diverse end products!
+
+             That being said there are ~some~ rules when it comes to Open Source. This is 
+             where liscensing comes into play. Different liscences effect the bounds of what
+             can be done with the source code in the future!
+          </p>
+          <body>
+            <Link target="_blank" href="https://opensource.org/licenses/gpl-license">
+            Liscencing - GPL
+            </Link>
+          </body>
+          <p>
+            The team has choosen to Liscence our project under the GNU General 
+            Public Liscence (GPL). In laymans terms this means that anyone is able
+            to take our project, change the source code, and monetize it. However, 
+            they must share the changes that they have made to the source code!
           </p>
           </Paper>
       </Box>,
@@ -324,7 +362,7 @@ export default function Documentation() {
             <p align="center">
             Webpack is the tool that has allowed up to compile the JavaScript modules which
             were created with npm. Given our large number of files Webpack aids in condensing
-            these files into what is needed to make PartyFish swim (work)!
+            these files into what is needed to make PartyFish swim!
             </p>
           </Paper>
       </Box>,
