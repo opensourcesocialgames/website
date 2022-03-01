@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Link from "@mui/material/Link";
+import { LinkContainer } from 'react-router-bootstrap';
 //import CssIcon from '@mui/icons-material/Css';
 //import HtmlIcon from '@mui/icons-material/Html';
 //import JavascriptIcon from '@mui/icons-material/Javascript';
@@ -56,9 +57,8 @@ export default function Documentation() {
 
     return (
       <div className="Documentation">
-        <br></br>
         <Box
-          sx={{flexGrow: 1, bgcolor: 'background.paper', display: 'flex',}}
+          sx={{flexGrow: 1, bgcolor: 'background.paper', display: 'flex', marginTop :2}}
         >
           <Tabs
             orientation="vertical"
@@ -110,9 +110,11 @@ export default function Documentation() {
       body:
         <Box>
           <body>
-            <Link target="_blank" href="#https://partyfish.netlify.app/">
-              <u>Who are we?</u>
-            </Link>
+            <LinkContainer to="/about">
+              <Link>
+              < u>Who are we?</u>
+              </Link>
+            </LinkContainer>
           </body>
           <p>
               As can be read about on our About Us Page, we are a group of five
