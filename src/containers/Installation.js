@@ -1,6 +1,4 @@
 import React from "react";
-import BlobFishParty from "../images/blobfish.png";
-import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import List from '@mui/material/List';
 import Grid from '@mui/material/Grid';
