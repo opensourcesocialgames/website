@@ -4,13 +4,12 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListItemIcon from "@mui/material/ListItemIcon";
-//import StarBorderIcon from '@mui/icons-material/StarBorder';
 import Working from "../images/screenshots/working.png"
 import Working1 from "../images/screenshots/working1.png"
-//import FileLayout from "../images/screenshots/filelayout.png"
 import Redux from "../images/screenshots/redux.png"
 import Demo from "../images/screenshots/demo.png"
-import HawaiianBlob from "../images/screenshots/happyblob.png";
+import Networking from "../images/screenshots/partyfishnetworking.jpg"
+import HomePage from "../images/screenshots/partyfishHP.png"
 import SetMealIcon from '@mui/icons-material/SetMeal';
 
 export default function Screenshots() {
@@ -68,40 +67,39 @@ export default function Screenshots() {
 const itemData = [
    // To add images, use the structure below. Order of the images does not matter.
    {
-    img: Demo,
-    title: "Game Demo",
+    img: HomePage,
+    title: "PartyFishHomePage",
     rows: 3,
     cols: 4,
-   },
-   {      
-    img: Working,
-    title: "Working Hard",
-    rows: 2,
-    cols: 2,
-    },
- /*  {
-    img: FileLayout,
-    title: "File Layout",
-    rows: 2,
-    cols: 1,
-    }, */
+     }, 
+     {
+     img: Working,
+     title: "Working Hard",
+     rows: 2,
+     cols: 2,
+     },
+     {
+       img: Redux,
+       title: "Redux Diagram",
+       rows: 2,
+       cols: 2,
+     }, 
     {
-      img: HawaiianBlob,
-      title: "Party Blob",
-      rows: 2,
-      cols: 2,
-    },
-    {
-      img: Redux,
-      title: "Redux Diagram",
-      rows: 2,
-      cols: 2,
-    }, 
-    {
-      img: Working1,
-      title: "Hardly Working",
-      rows: 2,
-      cols: 2,
-    },  
-
+     img: Demo,
+     title: "Game Demo",
+     rows: 3,
+     cols: 4,
+    },      
+     {
+       img: Networking,
+       title: "Server Setup",
+       rows: 2,
+       cols: 2,
+     },
+     {
+       img: Working1,
+       title: "Hardly Working",
+       rows: 2,
+       cols: 2,
+     },
 ];
