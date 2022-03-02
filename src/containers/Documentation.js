@@ -7,10 +7,6 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Link from "@mui/material/Link";
 import { LinkContainer } from 'react-router-bootstrap';
-//import CssIcon from '@mui/icons-material/Css';
-//import HtmlIcon from '@mui/icons-material/Html';
-//import JavascriptIcon from '@mui/icons-material/Javascript';
-//import LightbulbIcon from '@mui/icons-material/Lightbulb';
 
 
 function TabPanel(props) {

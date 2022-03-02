@@ -5,7 +5,6 @@ import FeaturedPost from './FeaturedPost';
 import BubblesBackground from "../images/bubbles.png";
 import GameConsoles from '../images/gameconsoles.png';
 import GameGraphic from '../images/gamegraphic.png';
-//import Loading from '../images/loading.png';
 
 
 const mainFeaturedPost = {
@@ -37,27 +36,6 @@ const featuredPosts = [
         link: 'https://www.partyfish.app',
         announcement: 'Can you survive this trivia Game?',
     },
- /*   {
-        title: 'Game Platform Release',
-        date: 'Date TBD',
-        description:
-            'This is the first release of the gaming platform, PartyFish. Let this mark the beginning of the end for quiplash.',
-        image: Loading,
-        imageLabel: 'Image Text',
-        link: '#',
-        announcement: 'Stay Tuned...',
-    },
-    {
-        title: 'Trivalry Game Release',
-        date: 'Date TBD',
-        description:
-            'This is the launch of PartyFish\'s first game, Trivalry, a fun and exciting mix of trivia and survivor.',
-        image: Loading,
-        imageLabel: 'Image Text',
-        link: '#',
-        announcement: 'Stay Tunned...',
-    },
-*/
 ];
 
 export default function Blog() {
