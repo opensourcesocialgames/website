@@ -1,6 +1,5 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from '@mui/material/ImageListItemBar';
@@ -11,7 +10,6 @@ import Redux from "../images/screenshots/redux.png"
 import Demo from "../images/screenshots/demo.png"
 import Networking from "../images/screenshots/partyfishnetworking.jpg"
 import HomePage from "../images/screenshots/partyfishHP.png"
-import HawaiianBlob from "../images/screenshots/happyblob.png";
 import SetMealIcon from '@mui/icons-material/SetMeal';
 
 export default function Screenshots() {
