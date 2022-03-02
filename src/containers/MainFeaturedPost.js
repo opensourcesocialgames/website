@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import { createTheme } from '@mui/material';
 import { ThemeProvider } from '@mui/material';
+import Link from "@mui/material/Link";
 
 import FishIcon from "../images/fish.png";
 
@@ -66,9 +67,11 @@ function MainFeaturedPost(props) {
                         <Typography variant="h5" color="inherit" paragraph>
                             {post.description}
                         </Typography>
-                        <Button variant="contained">
-                            Play the games now!
-                        </Button>
+                        <Link href="https://www.partyfish.app">
+                            <Button variant="contained">
+                                Play the games now!
+                            </Button>
+                        </Link>
                     </Box>
                 </Grid>
             </Grid>
