@@ -5,7 +5,7 @@ import FeaturedPost from './FeaturedPost';
 import BubblesBackground from "../images/bubbles.png";
 import GameConsoles from '../images/gameconsoles.png';
 import GameGraphic from '../images/gamegraphic.png';
-import Loading from '../images/loading.png';
+//import Loading from '../images/loading.png';
 
 
 const mainFeaturedPost = {
@@ -37,7 +37,7 @@ const featuredPosts = [
         link: 'https://www.partyfish.app',
         announcement: 'Can you survive this trivia Game?',
     },
-    {
+ /*   {
         title: 'Game Platform Release',
         date: 'Date TBD',
         description:
@@ -57,6 +57,7 @@ const featuredPosts = [
         link: '#',
         announcement: 'Stay Tunned...',
     },
+*/
 ];
 
 export default function Blog() {
