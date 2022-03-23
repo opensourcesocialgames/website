@@ -74,12 +74,12 @@ export default function Announcements() {
                                 <p>    
                                     At the start of this project the team set out with
                                     creating a MVP that consisted of:</p>
-                                <p>1. One complete trivia game 
-                                <p>2. One host running on an EC2 that supports one game at a time 
-                                <p>3. Four to eight players to play
-                                <p>4. A fun and smooth user experience
-                                <p>5. Clear documentation for outside contributors
-                                </p></p></p></p></p>
+                                <body>1. One complete trivia game</body>
+                                <body>2. One host running on an EC2 that supports one game at a time</body> 
+                                <body>3. Four to eight players to play</body>
+                                <body>4. A fun and smooth user experience</body>
+                                <body>5. Clear documentation for contributors</body>
+                                
                             </Paper>
                         </Grid>
                         <Grid item xs={6}>
@@ -90,12 +90,12 @@ export default function Announcements() {
                                 <p>   
                                     Since declaring our MVP 13 weeks ago the team has created a product
                                     that has:</p>
-                                <p>1. One complete trivia game 
-                                <p>2. One host running on an EC2 that supports MULTIPLE games at a time 
-                                <p>3. Four to eight players to play
-                                <p>4. A fun and smooth user experience
-                                <p>5. Clear documentation for outside contributors
-                                </p></p></p></p></p>
+                                <body>1. One complete trivia game</body>
+                                <body>2. One host running on an EC2 that supports MULTIPLE games at a time </body>
+                                <body>3. Four to eight players to play</body>
+                                <body>4. A fun and smooth user experience</body>
+                                <body>5. Clear documentation for contributors</body>
+                                
                             </Paper>
                         </Grid>
                     </Grid>
@@ -107,11 +107,11 @@ export default function Announcements() {
                             But in all seriousness, this project was super complex
                             and had a lot of moving parts, which include but are 
                             not limited to: </p>
-                        <p>1. Creating and configuring an AWS account that hosts the EC2 instance that runs the server
-                        <p>2. Creating, coding, and testing the game logic not just so that it works but works well and is fun and unique 
-                        <p>3. Creating and formatting the database that connects to the EC2 to hold the game questions 
-                        <p>4. Game styling
-                        </p></p></p></p>
+                        <body>1. Creating and configuring an AWS account that hosts the EC2 instance that runs the server</body>
+                        <body>2. Creating, coding, and testing the game logic not just so that it works but works well and is fun and unique </body>
+                        <body>3. Creating and formatting the database that connects to the EC2 to hold the game questions </body>
+                        <body>4. Game styling</body>
+                        
                     </Paper>
                 </Paper>
             </Box>
