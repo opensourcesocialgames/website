@@ -35,7 +35,8 @@ export default function Announcements() {
                     <p>
                         We are excited to announce that as 3/31/22 the PartyFish platform 
                         will officially be up and running. Subsequently PartyFish's first game,
-                        Trivalry, will also be up an running!
+                        Trivalry, will also be up an running! Trivalry combines speed and correctness, as well 
+                        as rivalry into one super intuitive group game! Happy Playing!
                     </p>
                 </Paper>
             </Box>
