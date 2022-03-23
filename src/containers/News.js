@@ -101,7 +101,7 @@ export default function Announcements() {
                     </Grid>
                     <Paper elevation={4} sx={{py:1, px:1,my:1, mx:1,}}>
                         <h5 style={{color: "#bf9000", my: 3, mx: 10 }}>
-                            <u>Additional Features</u>
+                            <u>Work Summary</u>
                         </h5>
                         <p>    
                             But in all seriousness, this project was super complex
