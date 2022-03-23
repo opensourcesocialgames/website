@@ -90,7 +90,7 @@ export default function Announcements() {
                                     Since declaring our MVP 13 weeks ago the team has created a product
                                     that has:</p>
                                 <p>1. One complete trivia game 
-                                <p>2. One host running on an EC2 that supports one game at a time 
+                                <p>2. One host running on an EC2 that supports MULTIPLE games at a time 
                                 <p>3. Four to eight players to play
                                 <p>4. A fun and smooth user experience
                                 <p>5. Clear documentation for outside contributors
