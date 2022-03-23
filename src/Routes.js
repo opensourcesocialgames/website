@@ -7,7 +7,7 @@ import Contribution from "./containers/Contribution";
 import AboutUs from "./containers/AboutUs";
 import Screenshots from "./containers/Screenshots";
 import Documentation from "./containers/Documentation";
-import Announcements from "./containers/Announcements";
+import News from "./containers/News";
 
 export default function Routes() {
     return (
@@ -16,8 +16,8 @@ export default function Routes() {
                 <Home />
             </Route>
 
-            <Route exact path="/announcements">
-                <Announcements />
+            <Route exact path="/news">
+                <News />
             </Route>
 
             <Route exact path="/installation">
