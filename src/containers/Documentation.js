@@ -138,12 +138,12 @@ export default function Documentation() {
           </p>
           <body>
             <Link target="_blank" href="https://opensource.org/licenses/gpl-license">
-              <u>Liscencing - GPL</u>
+              <u>Licensing - GPL</u>
             </Link>
           </body>
           <p>
-            The team has choosen to Liscence our project under the GNU General 
-            Public Liscence (GPL). In laymans terms this means that anyone is able
+            The team has decided to License our project under the GNU General 
+            Public License (GPL). In laymans terms this means that anyone is able
             to take our project, change the source code, and monetize it. However, 
             they must share the changes that they have made to the source code!
           </p>
