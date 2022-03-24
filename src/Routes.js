@@ -7,12 +7,17 @@ import Contribution from "./containers/Contribution";
 import AboutUs from "./containers/AboutUs";
 import Screenshots from "./containers/Screenshots";
 import Documentation from "./containers/Documentation";
+import News from "./containers/News";
 
 export default function Routes() {
     return (
         <Switch>
             <Route exact path="/">
                 <Home />
+            </Route>
+
+            <Route exact path="/news">
+                <News />
             </Route>
 
             <Route exact path="/installation">

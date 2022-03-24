@@ -17,20 +17,20 @@ const mainFeaturedPost = {
 
 const featuredPosts = [
     {
-        title: 'Platform Protoype Release',
-        date: '3/3/2022',
+        title: 'Platform Release',
+        date: '3/31/2022',
         description:
-            'This is the prototype of the gaming platform, PartyFish. We are marking the beginning of the end for quiplash. Get ready for tons of fun!',
+            'This is the gaming platform, PartyFish. We are marking the beginning of the end for quiplash. Get ready for tons of fun!',
         image: GameConsoles,
         imageLabel: 'Image Text',
         link: 'https://www.partyfish.app',
         announcement: 'Quiplash Who?',
     },
     {
-        title: 'Trivalry Prototype Release',
-        date: '3/3/2022',
+        title: 'Trivalry Release',
+        date: '3/31/2022',
         description:
-            'This is the protoype of PartyFish\'s first game, Trivalry. The team has been hard at work so that you can play a few rounds of Trivalry... Lets see what you got!',
+            'This is PartyFish\'s first game, Trivalry. The team has been hard at work so that you can play a few rounds of Trivalry... Lets see what you got!',
         image: GameGraphic,
         imageLabel: 'Image Text',
         link: 'https://www.partyfish.app',
