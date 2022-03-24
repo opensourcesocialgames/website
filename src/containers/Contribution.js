@@ -15,6 +15,7 @@ import ForumIcon from "@mui/icons-material/Forum";
 import BugReportIcon from "@mui/icons-material/BugReport";
 import CodeIcon from "@mui/icons-material/Code";
 import MergeIcon from "@mui/icons-material/Merge";
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 
 export default function Contribution() {
   return (
@@ -66,6 +67,12 @@ export default function Contribution() {
               <CodeIcon fontSize="medium" />
             </ListItemIcon>
             <ListItemText primary="Contribute Code to the Github Repositories" />
+          </ListItem>
+          <ListItem button component="a" target="_blank" href="https://github.com/partyfishgames/trivia">
+            <ListItemIcon>
+              <QuestionMarkIcon fontSize="medium" />
+            </ListItemIcon>
+            <ListItemText primary="Add questions to our Trivia Questions Database" />
           </ListItem>
           <ListItem button component="a" target="_blank" href="https://github.com/partyfishgames/partyfish/pulls">
             <ListItemIcon>
