@@ -147,6 +147,20 @@ export default function Documentation() {
             to take our project, change the source code, and monetize it. However, 
             they must share the changes that they have made to the source code!
           </p>
+          <body>
+            <LinkContainer to="/screenshots">
+              <Link>
+              < u>Diagrams</u>
+              </Link>
+            </LinkContainer>
+          </body>
+          <p>
+              Our group is full of visual learners so diagrams were a huge part of
+              the group meetings! Ronan even bought his own expo markers to ensure
+              the group always had the ability to draw up some diagrams. If you are also
+              a visual learner hop over to our screenshots page to see some pictures of our 
+              development process!  
+          </p>
         </Box>,
       num: 0,
     },
