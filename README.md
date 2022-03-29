@@ -1,6 +1,6 @@
-# Getting Started with John's Template
+# Partyfish Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can check out the website [https://partyfish.netlify.app/](here).
 
 ## Installation
 
