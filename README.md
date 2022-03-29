@@ -1,6 +1,6 @@
 # Partyfish Landing Page
 
-You can check out the website [https://partyfish.netlify.app/](here).
+You can check out the website [here](https://partyfish.netlify.app/).
 
 ## Installation
 
