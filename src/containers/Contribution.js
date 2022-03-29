@@ -100,14 +100,7 @@ export default function Contribution() {
                 <TimelineDot />
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent>Clone Repository</TimelineContent>
-            </TimelineItem>
-            <TimelineItem>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>Branch onto Release</TimelineContent>
+              <TimelineContent>Fork Repository</TimelineContent>
             </TimelineItem>
             <TimelineItem>
               <TimelineSeparator>
@@ -115,7 +108,7 @@ export default function Contribution() {
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent>
-                Create Branch for Feature / Bug Fix
+                Create Branch for Feature on your Repo
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -131,7 +124,7 @@ export default function Contribution() {
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent>
-                Commit and Push Code to Feature / Bug Branch
+                Add and Commit Code to Feature Branch on your Repo
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -140,7 +133,7 @@ export default function Contribution() {
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent>
-                Create Pull Request into Release Branch
+                Create Pull Request into Main Branch on our Repo
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -156,8 +149,8 @@ export default function Contribution() {
           <p>
             The master branch will hold the latest-released game version for
             players. In order to ensure players are always playing a cohesive
-            version of the game, code development will always branch off of a
-            release branch, called release-one, release-two, and so on.
+            version of the game, code development will always branch off of the
+            main branch.
           </p>
           <p>
             When beginning your code development, create a branch with a short
@@ -167,7 +160,7 @@ export default function Contribution() {
           <p>
             When you are finished coding, commit and push the code to your
             feature or bug fix branch. Then, create a pull request to merge the
-            branch into the most current release branch. Be sure to add the
+            branch into the most current branch. Be sure to add the
             repo's organizers as reviewers.
           </p>
           <p>
