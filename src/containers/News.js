@@ -48,9 +48,10 @@ export default function Announcements() {
                 <h5 style={{color: "#023E8A"}}>
                     Video Tutorial
                 </h5>
-                <h5 style={{color: "#bf9000", my: 3, mx: 10 }}>
-                    <u>Coming Soon!</u>
-                </h5>
+                <iframe  width="560" height="315"src="https://www.youtube.com/embed/UCBAYMIhinM" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
                 </Paper> 
             </Box>
             <Box sx={{mb: 2, mt: 1,}}>

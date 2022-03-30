@@ -3,14 +3,14 @@ import Box from "@mui/material/Box";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListItemIcon from "@mui/material/ListItemIcon";
 import Working from "../images/screenshots/working.png"
 import Working1 from "../images/screenshots/working1.png"
 import Redux from "../images/screenshots/redux.png"
-import Demo from "../images/screenshots/demo.png"
-import Networking from "../images/screenshots/partyfishnetworking.jpg"
-import HomePage from "../images/screenshots/partyfishHP.png"
-import SetMealIcon from '@mui/icons-material/SetMeal';
+import Demo from "../images/screenshots/new_demo.png"
+import ServerSetup from "../images/screenshots/partyfishnetworking.jpg"
+import HomePage from "../images/screenshots/new_partyfishHP.png"
+import Logic from "../images/screenshots/roundLogic.png"
+import Networking from "../images/screenshots/networking.png"
 
 export default function Screenshots() {
   return (
@@ -45,14 +45,6 @@ export default function Screenshots() {
                   }}
                   title={item.title}
                   position="bottom"
-                  actionIcon={
-                    <ListItemIcon
-                      sx={{color: 'yellow'}}
-                      aria-label={`star ${item.title}`}
-                    >
-                      <SetMealIcon />
-                    </ListItemIcon>
-                 }
                   actionPosition="left"
                 />
               </ImageListItem>
@@ -69,37 +61,50 @@ const itemData = [
    {
     img: HomePage,
     title: "PartyFishHomePage",
-    rows: 3,
-    cols: 4,
+    rows: 2,
+    cols: 2,
      }, 
      {
-     img: Working,
-     title: "Working Hard",
-     rows: 2,
-     cols: 2,
-     },
-     {
-       img: Redux,
-       title: "Redux Diagram",
-       rows: 2,
-       cols: 2,
+      img: Demo,
+      title: "Game Demo",
+      rows: 2,
+      cols: 2,
      }, 
-    {
-     img: Demo,
-     title: "Game Demo",
-     rows: 3,
-     cols: 4,
+     {
+      img: Networking,
+      title: "Networking Connections",
+      rows: 3,
+      cols: 2,
     },      
      {
-       img: Networking,
+       img: ServerSetup,
        title: "Server Setup",
-       rows: 2,
+       rows: 3,
        cols: 2,
      },
+     {
+      img: Working,
+      title: "Working Hard",
+      rows: 2,
+      cols: 2,
+      },
      {
        img: Working1,
        title: "Hardly Working",
        rows: 2,
        cols: 2,
      },
+     {
+      img: Redux,
+      title: "Redux Diagram",
+      rows: 2,
+      cols: 2,
+    },
+     {
+      img: Logic,
+      title: "Round Logic",
+      rows: 2,
+      cols: 2,
+    },
+
 ];
