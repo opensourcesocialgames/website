@@ -20,7 +20,7 @@ function FeaturedPost(props) {
             <Paper 
               elevation={4} 
               sx={{py:1, px:1,my:1, mx:1,}} 
-              style={{background: '#d6a304'}}
+              style={{background: '#c3e6fc'}}
               >
               <Typography component="h2" variant="h5" color="primary">
                 {post.title}
